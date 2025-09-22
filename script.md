@@ -40,7 +40,7 @@ If you are not narrating, display these three lines on screen (slide, caption, o
 ---
 
 ## 2. Architectural Overview (2:00 – 4:00)
-**Show on screen:** Architecture diagram. Use your cursor to trace each stage.
+**Show on screen:** Architecture diagram (the same Mermaid view in `README.md`). Use your cursor to trace each stage.
 
 **Say:**
 1. "Everything you see here runs inside BigQuery—no copied data, no extra databases. That makes it easy to govern and scale." 
@@ -49,8 +49,9 @@ If you are not narrating, display these three lines on screen (slide, caption, o
 4. "Stage 3 turns those stories into three fresh KPIs: Narrative Risk, Care Fragmentation, and Social Determinant Burden." 
 5. "Stage 4 converts each story into embeddings with `ML.GENERATE_EMBEDDING`, then `VECTOR_SEARCH` finds patients by concept instead of keyword." 
 6. "Stage 5 packages the results into views and table functions so dashboards and alerts can plug in instantly." 
+7. "Each stage lines up with a notebook section—when we switch to Colab, you’ll see the matching cells labeled Stage 1 through Stage 5." 
 
-**Quick aside:** "That’s the full BigQuery AI chain—`ML.GENERATE_TEXT`, `ML.GENERATE_EMBEDDING`, `VECTOR_SEARCH`—and you’ve now seen the architecture end to end." 
+**Quick aside:** "That’s the full BigQuery AI chain—`ML.GENERATE_TEXT`, `ML.GENERATE_EMBEDDING`, `VECTOR_SEARCH`—and you’ve now seen the architecture end to end, exactly as documented in the README and the notebook." 
 
 **Pause/Check:** Switch to Colab and resume recording when ready.
 
