@@ -24,6 +24,7 @@ This script is written so anyone can deliver the story—even if you never touch
 **Show on screen:** Top Markdown cell in the notebook listing the three KPIs (Narrative Risk Score, Care Fragmentation Index, Inferred Social Determinant Burden) and the impact sentence.
 
 **Say (read naturally):**
+- "Project Asclepius v2.0 is our BigQuery-native AI pipeline tackling data obscurity in clinical notes." 
 - "Healthcare is data rich yet insight poor—about 80% of EHR intelligence lives inside free-text notes." 
 - "Project Asclepius v2.0 reads that text directly inside BigQuery so care teams finally see three new KPIs and can run a smart search for high-risk patients." 
 - "Automating this saves roughly 120 analyst hours every week in a 300-bed hospital and surfaces high-risk cases days earlier so teams can act." 
