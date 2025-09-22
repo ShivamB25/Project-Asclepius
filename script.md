@@ -30,6 +30,13 @@ This script is written so anyone can deliver the story—even if you never touch
 
 **Pause/Check:** Stop recording if you need to switch windows.
 
+**Optional On-screen Text or Extra Voice Line:**
+- "Narrative Risk Score tells us how serious the situation is based on the clinician notes." 
+- "Care Fragmentation Index warns us when too many providers or conflicting instructions create gaps for a patient." 
+- "Inferred Social Determinant Burden highlights issues like transportation, housing, or support that could block recovery." 
+
+If you are not narrating, display these three lines on screen (slide, caption, or Colab Markdown cell) while the intro is visible.
+
 ---
 
 ## 2. Architectural Overview (2:00 – 4:00)
@@ -90,8 +97,11 @@ This script is written so anyone can deliver the story—even if you never touch
 **Say:**
 - "Watch the batching script—it walks through admissions in small groups so we stay within Vertex AI limits and can retry any hiccups automatically." 
 - "This prompt locks the response to our schema, which is why every row comes back as perfectly structured JSON." 
+- "Narrative Risk Score is the headline: it turns all those notes into an at-a-glance risk level for the care team." 
+- "When you hear Inferred Social Determinant Burden, think of it as a score that tells us how much social challenges—like transport or housing—might slow down care." 
 - "Now I’m running the Care Fragmentation orchestrator. Even if ETL isn’t your world, just know a control table logs every attempt and retries anything that times out, which makes it hospital-scale ready." 
 - "Here’s what pops out: number of providers, communication gaps, and a fragmentation score we’ve never had before." 
+- "Care Fragmentation Index is simply a warning light that the patient is juggling too many providers or disjointed instructions." 
 
 **Rubric Cue:** Technical Implementation (clean engineering) + BigQuery AI centrality. Say: "This is the AI Architect pattern in action—using Gemini to mint new clinical KPIs inside BigQuery." 
 
@@ -125,6 +135,7 @@ This script is written so anyone can deliver the story—even if you never touch
 
 **Say:**
 - "Even if SQL feels foreign, this view behaves like a ready-to-go clinician dashboard—risk tiers plus the factors driving them." 
+- "That High or Low tag is simply the Narrative Risk Score in plain language: High means urgent attention, Low means routine watch." 
 - "Here’s the `semantic_training_data` table. Think of it as a launch pad for training future models or hooking into Vertex AutoML—no extra prep needed." 
 - "Because these outputs are standard BigQuery views, operations teams can plug them into Looker, alerts, or whatever tools they already trust." 
 
