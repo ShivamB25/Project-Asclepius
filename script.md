@@ -7,11 +7,11 @@ This script is written so anyone can deliver the story—even if you never touch
 ## 0. Prep (Before Recording)
 - Open the Colab notebook `project_asclepius_v22.ipynb` in Google Colab. Make sure Drive is connected and run `!gcloud auth login` so the notebook points at the correct Google Cloud project (`PROJECT_ID`).
 - Double-check BigQuery and Vertex AI APIs are enabled. In the notebook, set the default project and location once, then restart the runtime so authentication sticks.
-- Keep these tabs or slides open:
-  - Intro slide with the problem statement ("clinical insights trapped in text") and headline impact metrics.
+- Keep these tabs ready:
+  - Colab notebook with the intro Markdown cell (problem statement + metrics) at the top.
   - README architecture diagram (Mermaid render or exported PNG).
   - Public GitHub repo + draft blog or video outline (for the Assets portion of the rubric).
-  - Final slide summarizing Gemini prompt feedback and confirmation that the BigQuery AI survey is done.
+  - Final notes page summarizing Gemini prompt feedback and confirmation that the BigQuery AI survey is done.
 - Do a dry run of every cell you plan to execute so nothing surprises you while recording.
 
 **Tip:** Between sections you can pause recording, reset your windows, and glance at the next lines in this script.
@@ -19,7 +19,9 @@ This script is written so anyone can deliver the story—even if you never touch
 ---
 
 ## 1. Opening Hook (0:00 – 2:00)
-**Show on screen:** Intro slide with three KPIs listed (Narrative Risk Score, Care Fragmentation Index, Inferred Social Determinant Burden).
+**Warm-up line (before the hook):** "Hi, I’m <name>. I’m recording right inside our Project Asclepius notebook—no slides—so you’ll see the live outputs and the GitHub design as we go."
+
+**Show on screen:** Top Markdown cell in the notebook listing the three KPIs (Narrative Risk Score, Care Fragmentation Index, Inferred Social Determinant Burden) and the impact sentence.
 
 **Say (read naturally):**
 - "Healthcare is data rich yet insight poor—about 80% of EHR intelligence lives inside free-text notes." 
