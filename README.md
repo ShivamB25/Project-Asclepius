@@ -35,15 +35,15 @@ graph TD
     end
 
     subgraph "BigQuery AI Pipeline"
-        D(Stage 1: Structuring Data<br>ML.GENERATE_TEXT)
-        E(Stage 2: Patient Chronicle<br>STRING_AGG)
-        F(Stage 3: KPI Generation<br>ML.GENERATE_TEXT)
-        G(Stage 4: Vectorization<br>ML.GENERATE_EMBEDDING)
+        D(Stage 1: Structuring Data<br/>ML.GENERATE_TEXT)
+        E(Stage 2: Patient Chronicle<br/>STRING_AGG)
+        F(Stage 3: KPI Generation<br/>ML.GENERATE_TEXT)
+        G(Stage 4: Vectorization<br/>ML.GENERATE_EMBEDDING)
     end
 
     subgraph "Outputs & Applications"
-        H{Narrative Risk Score (NRS)<br>Care Fragmentation Index (CFI)<br>Inferred SDoH Burden (ISDB)}
-        I[Semantic Search<br>VECTOR_SEARCH]
+        H{Narrative Risk Score (NRS)<br/>Care Fragmentation Index (CFI)<br/>Inferred SDoH Burden (ISDB)}
+        I[Semantic Search<br/>VECTOR_SEARCH]
         J[Clinical Dashboards & Alerts]
     end
 
