@@ -26,7 +26,7 @@ This script is written so anyone can deliver the story—even if you never touch
 - "Project Asclepius v2.0 reads that text directly inside BigQuery so care teams finally see three new KPIs and can run a smart search for high-risk patients." 
 - "Automating this saves roughly 120 analyst hours every week in a 300-bed hospital and surfaces high-risk cases days earlier so teams can act." 
 
-**Say this to hit the rubric:** "Judges, that covers the problem clarity and the quantified impact you score under innovation. In a minute I’ll show exactly how the architecture makes all of this possible." 
+**Quick aside:** "That already lays out the problem and the measurable payoff; next I’ll show how the architecture makes it real." 
 
 **Pause/Check:** Stop recording if you need to switch windows.
 
@@ -50,7 +50,7 @@ If you are not narrating, display these three lines on screen (slide, caption, o
 5. "Stage 4 converts each story into embeddings with `ML.GENERATE_EMBEDDING`, then `VECTOR_SEARCH` finds patients by concept instead of keyword." 
 6. "Stage 5 packages the results into views and table functions so dashboards and alerts can plug in instantly." 
 
-**Say this to hit the rubric:** "Judges, that is BigQuery AI in action—`ML.GENERATE_TEXT`, `ML.GENERATE_EMBEDDING`, and `VECTOR_SEARCH` in one flow—and a complete architecture walkthrough for your demo score." 
+**Quick aside:** "That’s the full BigQuery AI chain—`ML.GENERATE_TEXT`, `ML.GENERATE_EMBEDDING`, `VECTOR_SEARCH`—and you’ve now seen the architecture end to end." 
 
 **Pause/Check:** Switch to Colab and resume recording when ready.
 
@@ -64,7 +64,7 @@ If you are not narrating, display these three lines on screen (slide, caption, o
 - "The records mimic real hospital patients but remain synthetic, so we keep the demo safe." 
 - "Notice the labels and the US region setting; we treat this like a production system from the very first command." 
 
-**Say this to hit the rubric:** "Judges, that shows disciplined technical implementation—everything built in BigQuery with production-style labels and locations." 
+**Quick aside:** "That’s disciplined technical implementation—everything lives in BigQuery with production-style labels and locations." 
 
 **Pause/Check:** Make sure the dataset objects show as `DONE` in the job history before moving on.
 
@@ -82,7 +82,7 @@ If you are not narrating, display these three lines on screen (slide, caption, o
 - "Now I’m building a timeline. Think of it as one story for each patient—notes, labs, and demographics woven together so the model can read the full context." 
 - "Because we flatten the JSON right in SQL, analysts down the line open clean tables, not messy blobs." 
 
-**Say this to hit the rubric:** "Judges, note that this is pure BigQuery SQL calling Gemini—clean implementation and core BigQuery AI usage with no outside services." 
+**Quick aside:** "All pure BigQuery SQL calling Gemini—clean implementation, no outside services needed." 
 
 **Pause/Check:** Confirm the table populated before moving to Stage 3.
 
@@ -103,7 +103,7 @@ If you are not narrating, display these three lines on screen (slide, caption, o
 - "Here’s what pops out: number of providers, communication gaps, and a fragmentation score we’ve never had before." 
 - "Care Fragmentation Index is simply a warning light that the patient is juggling too many providers or disjointed instructions." 
 
-**Say this to hit the rubric:** "Judges, that’s the AI Architect pattern—clean engineering with control tables and Gemini at the center, exactly what your technical-implementation and BigQuery AI categories look for." 
+**Quick aside:** "That’s the AI Architect pattern: control tables, Gemini in the loop, engineered for reliability." 
 
 **Pause/Check:** Verify no errors in the execution logs before proceeding.
 
@@ -121,7 +121,7 @@ If you are not narrating, display these three lines on screen (slide, caption, o
 - "Here are the matches in seconds: similarity scores, risk levels, and a quick summary so care coordinators know who to call." 
 - "Searching for this insight used to take hours of manual chart review; now it takes seconds." 
 
-**Say this to hit the rubric:** "Judges, that’s warehouse-native semantic search—BigQuery AI doing the heavy lifting and an innovation that shrinks case discovery from hours to seconds." 
+**Quick aside:** "That’s warehouse-native semantic search—BigQuery AI shrinking case discovery from hours to seconds." 
 
 **Pause/Check:** Make sure the similarity table loads correctly.
 
@@ -139,7 +139,7 @@ If you are not narrating, display these three lines on screen (slide, caption, o
 - "Here’s the `semantic_training_data` table. Think of it as a launch pad for training future models or hooking into Vertex AutoML—no extra prep needed." 
 - "Because these outputs are standard BigQuery views, operations teams can plug them into Looker, alerts, or whatever tools they already trust." 
 
-**Say this to hit the rubric:** "Judges, that’s a polished, reusable package—views ready for dashboards—which is exactly what your demo clarity and technical polish categories reward." 
+**Quick aside:** "Polished, reusable package—views ready for dashboards and alerts right away." 
 
 **Pause/Check:** Stop recording to set up the recap slide if needed.
 
@@ -153,7 +153,7 @@ If you are not narrating, display these three lines on screen (slide, caption, o
 - "The new value is three AI-native KPIs and the ability to search patients semantically. No one else is doing that straight inside the warehouse." 
 - "The payoff is huge: ~120 analyst hours saved each week and a projected 5–7% reduction in CHF readmissions, which means around $15K saved per avoided case plus better outcomes." 
 
-**Say this to hit the rubric:** "Judges, those are the quantified impact and innovation proof points you’re scoring—hours saved and readmissions reduced because of KPI and search breakthroughs." 
+**Quick aside:** "Those metrics prove the impact and innovation—hours saved and readmissions avoided because of the KPIs and search." 
 
 **Pause/Check:** Prep to speak directly to the judges next.
 
@@ -163,14 +163,14 @@ If you are not narrating, display these three lines on screen (slide, caption, o
 **Show on screen:** Same recap slide or a simple checklist.
 
 **Say:**
-- "Judges, here’s how this lines up with your rubric." 
-- "Innovation: Asclepius is the only solution we’ve seen that blends LLM-built KPIs with warehouse-native semantic search—there’s no copy-and-paste recipe online." 
-- "Impact Metrics: Remember the 120 analyst hours saved and the 5–7% readmission drop worth about $15K per avoided case. Picture that across thousands of admissions." 
-- "Demo Clarity: You saw the full pipeline running live and the README doubles as documentation." 
-- "BigQuery AI + Architecture: We walked through the Mermaid diagram and executed `ML.GENERATE_TEXT`, `ML.GENERATE_EMBEDDING`, and `VECTOR_SEARCH` right in BigQuery." 
-- "Assets: Repo, blog or video, feedback doc, and the BigQuery AI survey are all submitted." 
+- "Let me tie this back to the rubric quickly." 
+- "For innovation: Asclepius is the only solution we’ve seen that blends LLM-built KPIs with warehouse-native semantic search—there’s no copy-and-paste recipe online." 
+- "For impact metrics: remember the 120 analyst hours saved and the 5–7% readmission drop worth about $15K per avoided case. Picture that across thousands of admissions." 
+- "For demo clarity: you saw the full pipeline running live and the README doubles as documentation." 
+- "For BigQuery AI and architecture: we walked through the Mermaid diagram and executed `ML.GENERATE_TEXT`, `ML.GENERATE_EMBEDDING`, and `VECTOR_SEARCH` right in BigQuery." 
+- "For assets: repo, blog or video, feedback doc, and the BigQuery AI survey are all submitted." 
 
-**Say this to hit the rubric:** "Judges, those five bullets line up exactly with your scoring categories—innovation, impact metrics, demo clarity, BigQuery AI plus architecture, and the full asset checklist." 
+**Quick aside:** "That rundown mirrors the scorecard—innovation, impact, clarity, BigQuery AI plus architecture, and all the assets." 
 
 ---
 
@@ -185,7 +185,7 @@ If you are not narrating, display these three lines on screen (slide, caption, o
 - "We published a companion blog/video that walks through the solution. The link is on screen and in the submission." 
 - "We also documented our prompt feedback and completed the BigQuery AI survey—both are attached for the bonus points." 
 
-**Say this to hit the rubric:** "Judges, that checks every asset box—repo, story piece, feedback, and the BigQuery AI survey for the bonus points." 
+**Quick aside:** "Assets are all buttoned up—repo, story piece, feedback doc, and the BigQuery AI survey for the bonus." 
 
 ---
 
@@ -197,14 +197,8 @@ If you are not narrating, display these three lines on screen (slide, caption, o
 - "We invite partners to bring in real EHR data, co-develop clinical validation, and move from reactive to proactive care." 
 - "Thank you—happy to answer questions." 
 
-**Say this to hit the rubric:** "Judges, that’s your clear call-to-action and proof we can deliver—exactly what you look for at the finish." 
+**Quick aside:** "And that wraps with a clear call-to-action plus proof we can execute end to end." 
 
 ---
 
-## Backup & Q&A (Use only if someone asks)
-- Keep an extra slide with prompt templates so you can speak to determinism or low temperature settings.
-- Have Colab cells ready to show raw JSON prompt bodies if someone wants to see the exact structure.
-- Prepare quick talking points on governance: data stays in the US, audit logs in BigQuery, and planned monitoring.
-
----
 **Presenter Reminder:** After each stage, glance at the BigQuery job history. If something fails, mention the retry safety and show the control table—turning a hiccup into proof of engineering rigor.
